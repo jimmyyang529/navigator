@@ -14,15 +14,14 @@
 
      <!-- Projects Row -->
      <div class="row">
+       <% @posts.each do |post| %>
          <div class="col-md-6 portfolio-item">
-             <a href="#">
-                 <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-             </a>
-             <h3>
-                 <a href="#">Project One</a>
-             </h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+           <%= link_to post_path(post) do %>
+            <%= image_tag post.image class: 'image-responsive' %><br>
+            <%= post.title %>
+           <% end %>
          </div>
+         <% end %>
      </div>
      <!-- /.row -->
 
