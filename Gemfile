@@ -28,6 +28,9 @@ gem 'inherited_resources', '~> 1.7'
 gem 'active_skin'
 gem "paperclip", "~> 5.0.0"
 
+# 安裝bootstrap
+gem 'bootstrap-sass'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
