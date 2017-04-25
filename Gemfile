@@ -22,7 +22,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'devise'
-
+gem 'formtastic', '~> 3.0'
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', '~> 1.7'
 gem 'active_skin'
@@ -30,7 +30,7 @@ gem "paperclip", "~> 5.0.0"
 
 # 安裝bootstrap
 gem 'bootstrap-sass'
-
+gem 'carrierwave', '~> 1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

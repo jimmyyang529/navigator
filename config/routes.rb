@@ -5,12 +5,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   devise_for :users
+  
   resources :posts
-
-
-  resources :posts do
-  	resources :countries, :controller => 'post_countries'
-  end
 
   resources :writers do
   	resources :articles
