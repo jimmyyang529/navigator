@@ -4,6 +4,7 @@
 	clear: both;
 }
 
+
 body{
 	margin: 0;
 	padding: 0;
@@ -59,6 +60,7 @@ a:visited{
 nav a:hover{
 	color: #CF1717;
 	text-decoration: none;
+
 }
 
 
@@ -66,7 +68,7 @@ nav a:hover{
   float:left;
 	padding: 0 150px;
 	color: #FFFFFF;
-	font-size: 24px;
+	font-size: 21px;
 	text-shadow: 2px 2px black;
 
 }
@@ -76,10 +78,9 @@ nav a:hover{
   margin-top: 160px;
   text-shadow: 2px 2px black;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 65px;
   color: #FFFFFF;
 }
-
 
 #video-container{
     position: absolute;
@@ -91,4 +92,91 @@ nav a:hover{
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+}
+
+.button{
+	float:left;
+	padding-top:100px;
+	padding-left: 180px;
+
+}
+
+.button a{
+	display:inline-block;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-size: .9rem;
+	letter-spacing: 1px;
+	background-color: #CF1717;
+	color:  #FFFFFF;
+	padding: 16px 28px;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.animated {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }

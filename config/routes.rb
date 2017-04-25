@@ -6,8 +6,12 @@ Rails.application.routes.draw do
 
 
 
-  resources :posts 
-
+  resources :posts do
+    collection do
+      get :service
+      get :info
+    end
+  end
 
 
   root 'posts#index'
