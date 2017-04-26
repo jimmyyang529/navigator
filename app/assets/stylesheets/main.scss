@@ -6,19 +6,24 @@
 
 
 body{
+
 	margin: 0;
 	padding: 0;
 }
 
 header{
- background-color: #FFFFFF;
+ // background-color: rgba(255,255,255,.1);
+ display: block;
+ position: fixed;
 }
+
+
 
 
 .container{
 	display: block;
-	width: 100%;
-	margin: 0 0;
+	max-width: 100%;
+
 }
 
 #logo{
@@ -27,48 +32,73 @@ header{
 }
 
 nav li{
-	float: right;
+	float: left;
 	list-style-type:none;
 }
 
 
 nav{
     display:block;
-    width:100%;
+		position: absolute;
+    max-width:100%;
     text-transform: uppercase;
 		padding-top:30px;
+		margin-left: 100px;
 }
 
 ul{
 	padding-right: 0 100px;
 }
 
+.login {
+	float:right;
+	border:1px solid;
+	border-color: #FFFFFF;
+	margin-top: 20px;
+	padding: 5px 5px;
+}
 
-nav a:link{
+.login a:link{
+	font-size: 13px;
+	color: #FFFFFF;
+	padding-top:5px;
+	text-decoration: none;
+}
+
+
+
+
+
+a:link{
 	display: block;
 	padding: 0 21px;
 	height:100%;
   text-decoration: none;
-	font-size: 18px;
-	color:#083B66;
+	font-size: 13px;
+	color:rgba(255,252,255,.3);
 }
 
 a:visited{
-	color:#083B66;
+	color:rgba(255,252,255,.3);
+	font-weight: 100px;
 }
 
 nav a:hover{
-	color: #CF1717;
+	color:rgba(255,252,255,1);
+	border-bottom: 3px solid;
+	border-radius: 2px;
+	border-bottom-color: #ffffff;
 	text-decoration: none;
-
 }
+
+
 
 
 .intro-text p{
   float:left;
 	padding: 0 150px;
 	color: #FFFFFF;
-	font-size: 21px;
+	font-size: 16px;
 	text-shadow: 2px 2px black;
 
 }
@@ -78,7 +108,7 @@ nav a:hover{
   margin-top: 160px;
   text-shadow: 2px 2px black;
   font-weight: 700;
-  font-size: 65px;
+  font-size: 40px;
   color: #FFFFFF;
 }
 
@@ -87,11 +117,12 @@ nav a:hover{
     top:0;
     left: 0;
     max-width: 100%;
-    height: 100%;
     z-index: -1000;
     padding-bottom: 56.25%;
-    height: 0;
+    height: 100%;
     overflow: hidden;
+		background-size: cover;
+
 }
 
 .button{
@@ -112,6 +143,63 @@ nav a:hover{
 	padding: 16px 28px;
 	text-decoration: none;
 }
+
+.service-content{
+	margin:0px auto;
+}
+
+
+.service img{
+	position: absolute;
+	max-width: 100%;
+
+}
+
+.col-4{
+	float:left;
+	position: relative;
+	background: rgba(207,23,23,1);
+	margin: 500px 0px 0px;
+	height:250px;
+	width:30%;
+	// border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.col-4 li {
+	text-align: center;
+	list-style-type:none;
+	font-size: 20px;
+	padding-top: 20px;
+	color: #FFFFFF;
+
+}
+
+.aboutus{
+	margin:0px auto;
+}
+
+.aboutus img{
+	position: absolute;
+	max-width: 100% ;
+
+}
+
+.map{
+	position: relative;
+	margin: 0px 0px 30px 600px;
+	box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 

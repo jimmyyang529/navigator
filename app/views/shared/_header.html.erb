@@ -1,20 +1,22 @@
 <header>
 	<div class="container clearfix">
-		<div id="logo">
+		<!-- <div id="logo">
 					<%= link_to posts_path do %>
 						 <%= image_tag("logo.png", :width => 200) %>
 						<% end %>
-
- 	  </div>
+ 	  </div> -->
   		<nav>
     		<ul class="clearfix">
-        		<li><%= link_to posts_path do %>
-							 <%= image_tag("homeblue.png", :width => 40) %>
-						<% end %></li>
-        		<li><a ><%= link_to '東南亞資訊', info_posts_path %></a></li>
-        		<li><a><%= link_to '服務內容', service_posts_path %></a></li>
-        		<li><a href="posts/service.html">服務內容</a></li>
+        		<li><%= link_to '首頁', posts_path %></li>
+        		<li><%= link_to '東南亞資訊', info_posts_path %></li>
+        		<li><%= link_to '服務內容', service_posts_path %></li>
+        		<li><a href="＃">專欄文章</a></li>
+						<li><%= link_to '關於我們', aboutus_posts_path %></li>
     		</ul>
 			</nav>
+				<div class="login">
+					<%= link_to '登入/註冊', new_user_session_path %>
+				</div>
+
 	</div>
 </header>
