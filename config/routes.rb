@@ -10,14 +10,16 @@ Rails.application.routes.draw do
 
   resources :posts do
   	resources :countries, :controller => 'post_countries'
-
-  resources :posts do
-    collection do
-      get :service
-      get :info
-      get :aboutus
-    end
   end
+
+    resources :posts do
+      collection do
+        get :service
+        get :info
+        get :aboutus
+      end
+    end
+
 
 
   resources :writers do
@@ -25,4 +27,5 @@ Rails.application.routes.draw do
   end
 
   root 'posts#index'
+
 end
