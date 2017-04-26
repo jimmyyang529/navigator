@@ -1,13 +1,15 @@
 
 <section class="banner">
-
-<div  id="video-container" >
-<%= video_tag(["indoormarket.mp4"], :autoplay => true, :loop => true) %>
-</div>
-  <div class="intro-text">
-    <h1>START YOUR NEXT ADVENTURE WITH TRADRING</h1>
-    <p>國際知名翻譯公司 -WritePath-合作夥伴為您提供可信賴的經商口譯嚮導，讓您放心南向拓展商業版圖</p>
+  <div  id="video-container" >
+      <%= video_tag(["Blue-Bottle.webm"], :autoplay => true, :loop => true) %>
   </div>
 
+  <div class="intro-text">
+    <h1 class="animated infinite fadeInDown">亞洲最值得信賴的專業經商領航者</h1>
+    <p class="animated infinite fadeInDown">國際知名翻譯公司 -WritePath-合作夥伴為您提供可信賴的經商專業諮詢與隨行口譯，讓您放心南向拓展無往不利</p>
+  </div>
 
+  <div class="button animated infinite fadeInDown">
+    <%= link_to '瞭解更多', service_posts_path %>
+  </div>
 </section>

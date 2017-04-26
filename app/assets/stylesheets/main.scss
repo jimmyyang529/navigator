@@ -4,76 +4,267 @@
 	clear: both;
 }
 
+
+body{
+
+	margin: 0;
+	padding: 0;
+}
+
+header{
+ // background-color: rgba(255,255,255,.1);
+ display: block;
+ position: fixed;
+}
+
+
+
+
 .container{
 	display: block;
-	max-width: 1180px;
-	margin: 0 auto;
+	max-width: 100%;
+
 }
 
 #logo{
 	float:left;
+	margin-top: -130px;
 }
 
 nav li{
 	float: left;
 	list-style-type:none;
-
-
 }
+
 
 nav{
-
     display:block;
-    width: 100%;
-    height:60px;
-    background-color: #777777;
-		float:left;
+		position: absolute;
+    max-width:100%;
     text-transform: uppercase;
-    line-height: 60px;
+		padding-top:30px;
+		margin-left: 100px;
 }
 
-
-
-nav a:link{
-	display: block;
-	padding: 0 21px;
-	height:100%;
-  color:#FFFFFF;
-  text-decoration: none;
-	font-size: 18px;
+ul{
+	padding-right: 0 100px;
 }
 
-nav a:hover{
-	color: #F37333;
+.login {
+	float:right;
+	border:1px solid;
+	border-color: #FFFFFF;
+	margin-top: 20px;
+	padding: 5px 5px;
+}
+
+.login a:link{
+	font-size: 13px;
+	color: #FFFFFF;
+	padding-top:5px;
 	text-decoration: none;
 }
 
 
+
+
+
+a:link{
+	display: block;
+	padding: 0 21px;
+	height:100%;
+  text-decoration: none;
+	font-size: 13px;
+	color:rgba(255,252,255,.3);
+}
+
+a:visited{
+	color:rgba(255,252,255,.3);
+	font-weight: 100px;
+}
+
+nav a:hover{
+	color:rgba(255,252,255,1);
+	border-bottom: 3px solid;
+	border-radius: 2px;
+	border-bottom-color: #ffffff;
+	text-decoration: none;
+}
+
+
+
+
 .intro-text p{
   float:left;
-	padding: 0 15px;
+	padding: 0 150px;
 	color: #FFFFFF;
+	font-size: 16px;
 	text-shadow: 2px 2px black;
+
 }
 .intro-text h1{
   float:left;
-  padding-left: 25px;
+  padding-left: 150px;
   margin-top: 160px;
   text-shadow: 2px 2px black;
-  font-weight: 300;
-  font-size: 100px;
+  font-weight: 700;
+  font-size: 40px;
   color: #FFFFFF;
 }
-
 
 #video-container{
     position: absolute;
     top:0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
     z-index: -1000;
     padding-bottom: 56.25%;
-    height: 0;
+    height: 100%;
     overflow: hidden;
+		background-size: cover;
+
+}
+
+.button{
+	float:left;
+	padding-top:100px;
+	padding-left: 180px;
+
+}
+
+.button a{
+	display:inline-block;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-size: .9rem;
+	letter-spacing: 1px;
+	background-color: #CF1717;
+	color:  #FFFFFF;
+	padding: 16px 28px;
+	text-decoration: none;
+}
+
+.service-content{
+	margin:0px auto;
+}
+
+
+.service img{
+	position: absolute;
+	max-width: 100%;
+
+}
+
+.col-4{
+	float:left;
+	position: relative;
+	background: rgba(207,23,23,1);
+	margin: 500px 0px 0px;
+	height:250px;
+	width:30%;
+	// border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.col-4 li {
+	text-align: center;
+	list-style-type:none;
+	font-size: 20px;
+	padding-top: 20px;
+	color: #FFFFFF;
+
+}
+
+.aboutus{
+	margin:0px auto;
+}
+
+.aboutus img{
+	position: absolute;
+	max-width: 100% ;
+
+}
+
+.map{
+	position: relative;
+	margin: 0px 0px 30px 600px;
+	box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.animated {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }

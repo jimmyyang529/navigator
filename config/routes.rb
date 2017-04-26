@@ -7,9 +7,18 @@ Rails.application.routes.draw do
   devise_for :users
   resources :posts
 
+<<<<<<< HEAD
 
   resources :posts do
   	resources :countries, :controller => 'post_countries'
+=======
+  resources :posts do
+    collection do
+      get :service
+      get :info
+      get :aboutus
+    end
+>>>>>>> front_end
   end
 
   resources :writers do
