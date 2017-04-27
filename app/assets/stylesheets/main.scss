@@ -43,7 +43,7 @@ nav{
     max-width:100%;
     text-transform: uppercase;
 		padding-top:30px;
-		margin-left: 100px;
+		margin-left: 	40px;
 }
 
 ul{
@@ -83,13 +83,15 @@ a:visited{
 	font-weight: 100px;
 }
 
-nav a:hover{
+nav li a:hover{
 	color:rgba(255,252,255,1);
-	border-bottom: 3px solid;
-	border-radius: 2px;
+	border-bottom: 1px solid;
+
 	border-bottom-color: #ffffff;
 	text-decoration: none;
 }
+
+
 
 
 
@@ -129,8 +131,13 @@ nav a:hover{
 	float:left;
 	padding-top:100px;
 	padding-left: 180px;
-
+	background-color: rgba(255,255,255,0);
 }
+
+.button:hover{
+	background-color: rgba(255,255,255,0);
+}
+
 
 .button a{
 	display:inline-block;
@@ -191,6 +198,9 @@ nav a:hover{
 	box-sizing: border-box;
 
 }
+
+
+
 
 
 

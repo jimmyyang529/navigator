@@ -9,6 +9,11 @@ class PostsController < ApplicationController
     @posts = Post.order('created_at DESC').limit(4).offset(1)
   end
 
+  def signup
+    render layout: false
+  end
+
+
   private
 
   def post_params
