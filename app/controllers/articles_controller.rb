@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
   private
 
   def post_params
-    params.require(:article).permit(:title, :content, :photo, :image, :writer_id)
+    params.require(:article).permit(:title, :content, :photo, :writer_id)
   end
 
 end

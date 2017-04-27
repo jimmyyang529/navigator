@@ -6,23 +6,15 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-
-
-  resources :posts do
-  	resources :countries, :controller => 'post_countries'
-
   resources :posts do
     collection do
       get :service
-      get :info
       get :aboutus
+      get :work_case
     end
   end
 
-
-  resources :writers do
-  	resources :articles
-  end
+  resources :articles
 
   root 'posts#index'
 end
