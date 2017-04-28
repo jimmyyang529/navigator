@@ -9,10 +9,9 @@
  	  </div> -->
   		<nav>
     		<ul class="clearfix">
-        		<li><%= link_to '首頁', posts_path %></li>
-        		<li><%= link_to '東南亞資訊', info_posts_path %></li>
+        		<li><%= link_to '合作案例', work_case_posts_path(@posts) %></li>
         		<li><%= link_to '服務內容', service_posts_path %></li>
-        		<li><a href="＃">專欄文章</a></li>
+        		<li><%= link_to '東南亞商情', articles_path(@articles) %></li>
 						<li><%= link_to '關於我們', aboutus_posts_path %></li>
     		</ul>
 			</nav>

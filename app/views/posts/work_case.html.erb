@@ -1,0 +1,13 @@
+<h1>合作案例</h1>
+
+<ul>
+    <% @posts.each do |post| %>
+      <div>
+      	<p>
+      		<%= image_tag post.photo %>
+      	</p>
+        <p><%= post.title %></p>
+        <p><%= post.body %></p>
+      </div>       
+    <%end%>
+</ul>

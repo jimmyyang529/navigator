@@ -12,6 +12,13 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+<<<<<<< HEAD
+  resources :posts do
+    collection do
+      get :service
+      get :aboutus
+      get :work_case
+=======
 
 
   resources :posts do
@@ -24,13 +31,11 @@ Rails.application.routes.draw do
         get :info
         get :aboutus
       end
+>>>>>>> e3667cebbe37fad44a0916858f542f283cfa34ae
     end
 
 
-
-  resources :writers do
-  	resources :articles
-  end
+  resources :articles
 
   root 'posts#index'
 

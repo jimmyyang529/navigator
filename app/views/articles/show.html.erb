@@ -1,0 +1,13 @@
+<h1>東南亞商情</h1>
+
+<%= image_tag @article.photo %>
+
+<p><%= @article.title %></p>
+
+<%= @article.writer.name %>
+
+<ul>
+	<li><%= @article.content %></li>
+	<li><%= @article.created_at %></li>
+</ul>
+

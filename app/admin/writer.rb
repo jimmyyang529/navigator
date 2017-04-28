@@ -12,14 +12,15 @@ ActiveAdmin.register Writer do
 #   permitted
 # end
 
+	
   permit_params :name, :Introduction, :photo, :experience
 
 	  show do |t|
 	    attributes_table do
 	      row :name
 	      row :Introduction
-	      row :photo
 	      row :experience
+	      row :photo
 	    end
 	  end
 

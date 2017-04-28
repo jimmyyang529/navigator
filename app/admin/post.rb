@@ -1,11 +1,12 @@
 ActiveAdmin.register Post do
-
-  permit_params :title, :body, :image
+  
+  permit_params :title, :body, :photo
 
   show do |t|
     attributes_table do
       row :title
       row :body
+      row :photo
     end
   end
 
@@ -13,13 +14,9 @@ ActiveAdmin.register Post do
     f.inputs do
       f.input :title
       f.input :body
+      f.input :photo
     end
     f.actions
   end
-
-
-
-
-
 
 end

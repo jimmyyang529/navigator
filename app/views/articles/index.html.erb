@@ -1,0 +1,9 @@
+<h1>東南亞商情</h1>
+
+<ul>
+    <% @articles.each do |article| %>
+      <div>
+        <li><%= link_to article.title, article_path(article) %></li>
+      </div>       
+    <%end%>
+</ul>
