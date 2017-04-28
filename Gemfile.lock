@@ -262,11 +262,8 @@ DEPENDENCIES
   carrierwave (~> 1.0)
   coffee-rails (~> 4.2)
   devise
-<<<<<<< HEAD
   formtastic (~> 3.0)
-=======
   foundation-rails
->>>>>>> front_end
   inherited_resources (~> 1.7)
   jbuilder (~> 2.5)
   jquery-rails
