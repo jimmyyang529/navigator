@@ -10,6 +10,11 @@ class PostsController < ApplicationController
     @posts = Post.all.order('created_at DESC')
   end
 
+  def signup
+    render layout: false
+  end
+
+
   private
 
   def post_params
