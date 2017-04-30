@@ -23,3 +23,12 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+production:
+  adapter: mysql2
+  pool: 25
+  encoding: utf8mb4
+  database: navigator
+  host: localhost
+  username: root
+  password: JIO95351013
