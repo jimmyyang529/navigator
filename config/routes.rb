@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   ActiveAdmin.routes(self)
 
-  devise_for :users
+  devise_for :users, controllers: { registrations: "registrations"}
+    get 'posts/signup', to: 'posts#signup'
 
   resources :posts do
     collection do
@@ -14,8 +15,8 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :articles
 
+  resources :articles
   root 'posts#index'
 
 end
