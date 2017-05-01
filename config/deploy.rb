@@ -1,8 +1,7 @@
-`ssh-add` 
 # config valid only for current version of Capistrano
 lock "3.8.0"
 
-set :application, "navigator"
+set :application, "deploy"
 set :repo_url, "git@github.com:jimmyyang529/navigator.git"
 set :deploy_to, '/home/deploy/navigator'
 
