@@ -4,7 +4,7 @@ lock "3.8.0"
 `ssh-add` # 注意這是鍵盤左上角的「 `」不是單引號「 '」
 set :application, 'navigator'
 
-set :repo_url, 'git@github.com:jimmyyang529/navigator.git'  
+set :repo_url, 'https://github.com/jimmyyang529/navigator'  
 set :deploy_to, '/home/ray/navigator'
 set :keep_releases, 5
 
