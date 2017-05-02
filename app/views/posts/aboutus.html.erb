@@ -1,31 +1,37 @@
-<div class="aboutus">
 
-  <div class="aboutus-content">
-    <div class="col-6" id="col-6-1">
-      <p>關於我們</p>
+<div class="aboutus clearfix">
+
+    <div id="logo">
+          <%= link_to posts_path do %>
+             <%= image_tag("logo.png", :width => 50) %>
+          <% end %>
     </div>
-    <div class="col-6" id="col-6-2">
-      <div class="col-3" id="col-3-1">
-        <%= image_tag ("col-3-1.jpg")%>
-      </div>
-      <div class="col-3" id="col-3-2">
-        <p>圖片</p>
-      </div>
-      <div class="col-3" id="col-3-3">
-        <p>圖片</p>
-      </div>
-      <div class="col-3" id="col-3-4">
-        <p>圖片</p>
-      </div>
+      <nav >
+        <ul class="clearfix">
+            <li><%= link_to '合作案例', work_case_posts_path(@posts) %></li>
+            <li><%= link_to '服務內容', service_posts_path %></li>
+            <li><%= link_to '東南亞商情', articles_path(@articles) %></li>
+            <li><%= link_to '關於我們', aboutus_posts_path %></li>
+        </ul>
+      </nav>
+</div>
 
+<div class="triangle animated infinite flipInX">
 
-    </div>
-  </div>
-  <div class="aboutus-img">
-  <%= image_tag ("aboutus.jpg")%>
+    <%= image_tag ("triangle.jpg")%>
+
+</div>
+<div class="triangle-content animated infinite fadeInDown">
+    <p>人文貿易商業鐵三角</p>
+    <h5>致力於人文信任，市場文化，法律專業，集結產業核心價值</h5>
+    <h5>以人為本，以萬物為生，信任為尊</h5>
+    <h5>安全貿易，給您家的感覺</h5>
 </div>
 
 
 
 
+
+<div class="aboutus-bg">
+  <%= image_tag ("about.jpg")%>
 </div>

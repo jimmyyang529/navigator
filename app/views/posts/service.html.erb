@@ -1,34 +1,29 @@
-<div class="service">
-      <img><%= image_tag ("service.jpg")%></img>
+<div class="aboutus clearfix">
 
-      <div class="service-content">
-          <a href="">
+    <div id="logo">
+          <%= link_to posts_path do %>
+             <%= image_tag("logo.png", :width => 50) %>
+          <% end %>
+    </div>
+      <nav >
+        <ul class="clearfix">
+            <li><%= link_to '合作案例', work_case_posts_path(@posts) %></li>
+            <li><%= link_to '服務內容', service_posts_path %></li>
+            <li><%= link_to '東南亞商情', articles_path(@articles) %></li>
+            <li><%= link_to '關於我們', aboutus_posts_path %></li>
+        </ul>
+      </nav>
+</div>
 
-            <div class="col-4 animated infinite fadeInDown">
-            <ul>
-                <li>專業口譯服務</li>
-                <li>南向行程安排</li>
-                <li>隨行嚮導陪同</li>
-            </ul>
-          </div></a>
-
-          <a><div class="col-4 animated infinite fadeInDown">
-            <ul>
-                <li>行前文件翻譯</li>
-                <li>當地夥伴媒合</li>
-                <li>市場專業評估</li>
-            </ul>
-          </div></a>
-
-          <a><div class="col-4 animated infinite fadeInDown">
-            <ul>
-                <li>專業口譯服務</li>
-                <li>南向行程安排</li>
-                <li>隨行嚮導陪同</li>
-            </ul>
-          </div>
-        </a>
-  </div>
+<div class="service-triangle animated infinite flipInX">
+    <%= image_tag ("triangle.jpg")%>
+</div>
+<div class="service-p">
+  <p>進軍東南亞事前評估</p>
+</div>
 
 
+
+<div class="aboutus-bg">
+  <%= image_tag ("service.jpg")%>
 </div>
