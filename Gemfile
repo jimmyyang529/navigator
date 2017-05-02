@@ -39,7 +39,7 @@ gem 'bootstrap-sass'
 gem 'carrierwave', '~> 1.0'
 gem 'simple_form'
 
-
+gem 'mysql2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
