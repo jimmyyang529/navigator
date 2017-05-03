@@ -14,26 +14,32 @@
         </ul>
       </nav>
 </div>
+<div class="workcase animated infinite fadeInDown">
 
-<ul>
+  <div class="workcase-fish">
+    <div class="fish-1">
+      <a><%= image_tag ("workcase-fish-img.png")%></a>
+    </div>
+    <div class="fish-1">
+      <%= image_tag ("workcase-fish-text.png")%>
+    </div>
+  </div>
 
-    <% @posts.each do |post| %>
-    <div class="work-case">
-      	<p><%= image_tag post.photo %>
-      	</p>
-        <h3><%= post.title %></h3>
-        <p><%= post.body %></p>
-        <%end%>
-      </div>
+  <div class="workcase-tea">
+    <div class="tea-1">
+      <%= image_tag ("workcase-tea-text.png")%>
+    </div>
+    <div class="tea-1">
+      <%= image_tag ("workcase-tea-img.png")%>
+    </div>
+  </div>
+</div>
 
 
-</ul>
 
 
 
 
 <div class="workcase-bg">
-
-  <%= image_tag ("work_case.jpg")%>
-
+  <%= image_tag ("workcase-bg.jpg")%>
 </div>

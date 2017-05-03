@@ -97,7 +97,7 @@ nav li a:hover{
 .intro-text h1{
   float:left;
   padding-left: 150px;
-  margin-top: 160px;
+  margin-top: 180px;
   text-shadow: 2px 2px black;
   font-weight: 700;
   font-size: 40px;
@@ -105,23 +105,21 @@ nav li a:hover{
 }
 
 #video-container{
-    position: absolute;
+    position: fixed;
+		max-width:100%;
     top:0;
     left: 0;
-    max-width: 100%;
     z-index: -1000;
-    padding-bottom: 56.25%;
-    height: 100%;
-    overflow: hidden;
 		background-size: cover;
-
 }
 
 .button{
+	top: 400px;
+	left:200px;
 	float:left;
-	padding-top:100px;
-	padding-left: 180px;
+	position: absolute;
 	background-color: rgba(255,255,255,0);
+	text-shadow: 0.1em 0.1em 0.3em black;
 }
 
 .button:hover{
@@ -241,7 +239,10 @@ nav li a:hover{
 .aboutus-bg img {
 		min-height: 100%;
 		width: 100%;
+		position: fixed;
 }
+
+
 
 .aboutus-bg{
 	float:left;
@@ -250,6 +251,8 @@ nav li a:hover{
 	bottom: 0;
 	right: 0;
 	z-index: -999;
+	position: absolute;
+	background-size: cover;
 }
 
 .triangle{
@@ -257,22 +260,42 @@ nav li a:hover{
 	float:left;
 	top:200px;
 	left:100px;
+
 }
+
+
 
 .service-p{
 	position: absolute;
 	color:#FFFFFF;
 	font-size: 35px;
-	top:500px;
+	top:450px;
 	left:100px;
+}
+
+.service-orange p{
+	position: absolute;
+	color:#D35A2B;
+	font-size: 30px;
+	top:540px;
+	left:100px;
+}
+
+.service-content{
+		position:absolute;
+		color:#EBE0C2;
+		font-size: 12px;
+		top:640px;
+		left:100px;
 }
 
 
 
 .service-triangle{
 	position: absolute;
+	width:300px;
 	float:left;
-	top:200px;
+	top:130px;
 	left:100px;
 }
 
@@ -295,6 +318,27 @@ nav li a:hover{
 	color: #FFFFFF;
 }
 
+.consult{
+	position: absolute;
+	left:400px;
+	top:700px;
+	font-weight: 500px;
+	font-size: 40px;
+	float: left;
+	color:#000000;
+	height:500px;
+}
+
+.consult p{
+	text-shadow: 0.1em 0.1em 0.3em black;
+	margin-left:235px;
+}
+
+.consult-col-4 {
+	float:left;
+	margin:20px;
+
+}
 
 .aboutus-content h2{
 	margin-left: 200px;
@@ -324,20 +368,7 @@ nav li a:hover{
 }
 
 
-.work-case{
-	background-size: cover;
-	margin-top: 100px;
-	margin-left: 30px;
-	padding:8px;
-	height: 500px;
-	background: rgba(255,255,255,.6);
-	box-sizing: border-box;
-	margin-left: 40px;
-	position: absolute;
-	background-size: cover;
 
-
-}
 
 
 .workcase-bg{
@@ -347,8 +378,43 @@ nav li a:hover{
 	bottom: 0;
 	right: 0;
 	z-index: -999;
-
+	position: fixed;
 }
+
+.workcase-bg img{
+	background-size: cover;
+	height: 100vmin;
+}
+
+.workcase{
+	float: left;
+	position: absolute;
+	top:150px;
+	left:315px;
+	width:auto;
+	box-shadow: 0.1em 0.1em 0.3em black;;
+}
+
+.workcase-tea{
+	padding-bottom: 100px;
+}
+
+.fish-1, .tea-1{
+	float:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
