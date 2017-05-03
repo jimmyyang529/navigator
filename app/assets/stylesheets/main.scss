@@ -51,8 +51,14 @@ ul{
 	float:right;
 	border:1px solid;
 	border-color: #FFFFFF;
-	margin-top: 20px;
-	padding: 5px 20px;
+	margin-top: 35px;
+	padding: 5px 0;
+	width:180px;
+}
+
+.login a{
+	position: relative;
+	float:left;
 }
 
 .login a:link{
@@ -115,7 +121,7 @@ nav li a:hover{
 
 .button{
 	top: 400px;
-	left:200px;
+	left:500px;
 	float:left;
 	position: absolute;
 	background-color: rgba(255,255,255,0);
@@ -239,7 +245,6 @@ nav li a:hover{
 .aboutus-bg img {
 		min-height: 100%;
 		width: 100%;
-		position: fixed;
 }
 
 
@@ -320,8 +325,8 @@ nav li a:hover{
 
 .consult{
 	position: absolute;
-	left:400px;
-	top:700px;
+	left:350px;
+	top:950px;
 	font-weight: 500px;
 	font-size: 40px;
 	float: left;
@@ -331,7 +336,7 @@ nav li a:hover{
 
 .consult p{
 	text-shadow: 0.1em 0.1em 0.3em black;
-	margin-left:235px;
+	margin-left:240px;
 }
 
 .consult-col-4 {
@@ -402,10 +407,57 @@ nav li a:hover{
 	float:left;
 }
 
+.article-title li a{
+	color:black;
+}
+
 
 .info img{
 	width:400px;
+	float: left;
+	padding-right: 5px;
 }
+
+.article-title {
+	padding:10px;
+	float:left;
+}
+
+.article-title li {
+	list-style-type:none;
+	font-size: 18px;
+
+}
+
+.article-title li a:hover{
+	background-color: rgba(255,255,255,.8);
+}
+
+
+.article-title img{
+	height:190px;
+}
+
+
+
+.table{
+	position: absolute;
+	top:100px;
+	left:10px;
+}
+
+.table h1{
+	text-shadow: 0.1em 0.1em 0.3em black;
+	color:#FFFFFF;
+}
+
+
+.table li{
+
+	background-color: rgba(255,255,255,.5);
+}
+
+
 
 
 
