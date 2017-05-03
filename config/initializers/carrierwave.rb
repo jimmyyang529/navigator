@@ -8,6 +8,8 @@ CarrierWave.configure do |config|
       :region                 => ENV['s3_bucket_region']
     }
     config.fog_directory  = ENV['s3_bucket_name']
+    # Forcing use of HTTP
+    config.asset_host = 'http://#{config.fog_directory}.s3.amazonaws.com'
   else
     config.storage = :file
   end  
