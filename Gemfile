@@ -40,7 +40,8 @@ gem 'carrierwave', '~> 1.0'
 gem 'simple_form'
 
 gem 'mysql2'
-gem "fog-aws"
+gem 'mini_magick'
+gem 'fog-aws'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -70,7 +71,8 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
   gem 'mysql2'
-  gem "fog-aws"
+  gem 'mini_magick'
+  gem 'fog-aws'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
