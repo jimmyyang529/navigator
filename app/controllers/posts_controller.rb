@@ -6,6 +6,9 @@ class PostsController < ApplicationController
   def show
   end
 
+  def create
+  end
+
   def work_case
     @posts = Post.all.order('created_at DESC')
   end
