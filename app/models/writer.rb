@@ -10,5 +10,6 @@ class Writer < ApplicationRecord
 	mount_uploader :photo, PostsUploader
 
 	has_many :articles
+	has_many :posts
 
 end
