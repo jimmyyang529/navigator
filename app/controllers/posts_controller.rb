@@ -4,6 +4,8 @@ class PostsController < ApplicationController
   end
 
   def show
+    @post = Post.find(params[:id])
+    @posts = Post.order('created_at DESC').limit(4).offset(1)
   end
 
   def work_case

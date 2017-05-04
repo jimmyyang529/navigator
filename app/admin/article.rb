@@ -14,13 +14,14 @@ ActiveAdmin.register Article do
 	  end
 	end
 
-	# form :html => { :enctype => "multipart/form-data" } do |f|
-	#   f.inputs do
-	#     f.input :title
-	#     f.input :content
-	#     f.input :image, hint: f.article.image? ? image_tag(article.image.url, height: '100') : content_tag(:span, "Upload JPG/PNG image" )
-	#   end
-	#   f.actions
-	# end
+  form :html => { :enctype => "multipart/form-data" } do |f|
+    f.inputs do
+      f.input :title
+      f.input :content
+      f.input :writer_id
+      f.input :photo
+    end
+    f.actions
+  end
 
 end
