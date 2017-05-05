@@ -1,8 +1,8 @@
 class Post < ApplicationRecord
 	
-  validates :title, presence: true, length: { minimum: 5 }
+  validates :title, presence: true, length: { minimum: 1 }
   validates :body, presence: true
-  validates :photo, presence: true
+  validates :photo, presence: false
 
   mount_uploader :photo, PostsUploader
 
