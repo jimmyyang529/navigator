@@ -9,5 +9,26 @@
 	<li><%= @article.content %></li>
 </ul>
 
+<h2>評論</h2>
 
-</div>
+<ul>
+	<% @responses.each do |response| %>
+		<% if response.user.present? %>
+			<%= current_user.email %></br>
+		<% end %>
+		<%= response.body %>
+	<% end %>
+</ul>
+
+	<%= form_for @response, :url => article_responses_path(
+		:article_id => @article, :id => @response.id), :method => :post do |f| %>
+		<%= f.label :body, "欄位" %><br>
+		<%= f.text_field :body %>
+		<%= f.submit "回覆" %>
+	<% end %>  
+
+</div>	
+
+		
+
+	

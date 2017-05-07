@@ -8,4 +8,6 @@ class Article < ApplicationRecord
 
 	belongs_to :writer
 
+	has_many :responses
+
 end
