@@ -35,13 +35,6 @@
   </div>
 </div>
 
-<%= form_tag work_case_posts_path, method: :get do %>
-  <%= select_tag "countries", options_from_collection_for_select( Country.all, :id, :name),:onchange => 'this.form.submit()', prompt: "ALL" %>
-<% end %>
-
-
-
-
 <div class="workcase-bg">
   <%= image_tag ("workcase-bg.jpg")%>
 </div>
