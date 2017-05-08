@@ -14,7 +14,15 @@ class ArticlesController < ApplicationController
     @responses = @article.responses.order('created_at desc')
   end
 
-  def destory
+  def destroy_response
+    @response = Response.find(params[:response_id])
+    @response.destroy
+
+    respond_to do |format|
+      # :remote => true
+      format.js # destroy.js.erb
+      format.html { redirect_to article_path }
+    end
   end
 
   private
