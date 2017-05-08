@@ -15,17 +15,7 @@
 						<li><%= link_to '關於我們', aboutus_posts_path %></li>
 				</ul>
 			</nav>
-				<div class="login">
-					<!-- <a href="#" id="signup-link" > -->
-						<% if current_user %>
-							<%= link_to('登出', destroy_user_session_path, :method => :delete) %>
-							<%= link_to('修改密碼', edit_registration_path(:user)) %>
-						<% else %>
-							<%= link_to('註冊', new_registration_path(:user)) %>
-							<%= link_to('登入', new_session_path(:user)) %>
-						<% end %>
-					<!-- </a> -->
-				</div>
+
 
 	</div>
 
@@ -83,15 +73,16 @@
 <div class="article-writer animated infinite fadeInRight">
 
 		<h3>About Writer</h3>
-    <%= image_tag ("melon.png")%>
-		<h4>Ms. Melon</h4>
-    <h5>經歷Experience</h5>
-    <ul>
-        <li>企業管理背景</li>
-        <li>曾於台灣政治大學留學一年</li>
-        <li>目前於BBF Peepia擔任業務開發主管</li>
-        <li>2年行銷總監經歷於Anantara Vacation Club</li>
-    </ul>
+		<%= image_tag ("hothihonglien.png")%>
+		<h4>MS Ho Thi Hong Lien</h4>
+		<h5>經歷Experience</h5>
+		<ul>
+				<li>Limkokwing大學國際貿易研究，從事越南及東南亞市場研究</li>
+				<li>Sinh Tai貿易公司國貿助理</li>
+				<li>Jonny Walker酒商代理商策展員</li>
+				<li>Wide-Link Group科技項目撰文</li>
+				<li>The World’s Music業務助理</li>
+		</ul>
 
 
   </div>

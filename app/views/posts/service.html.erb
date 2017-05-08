@@ -6,7 +6,7 @@
 					<% end %>
 		</div>
 			<nav>
-				<ul class="clearfix">
+				<ul class="service-a clearfix">
 						<li><%= link_to '服務內容', service_posts_path %></li>
 						<li><%= link_to '合作案例', work_case_posts_path(@posts) %></li>
 						<li><%= link_to '顧問', consultant_posts_path %></li>
@@ -14,17 +14,6 @@
 						<li><%= link_to '關於我們', aboutus_posts_path %></li>
 				</ul>
 			</nav>
-				<div class="login">
-					<!-- <a href="#" id="signup-link" > -->
-						<% if current_user %>
-							<%= link_to('登出', destroy_user_session_path, :method => :delete) %>
-							<%= link_to('修改密碼', edit_registration_path(:user)) %>
-						<% else %>
-							<%= link_to('註冊', new_registration_path(:user)) %>
-							<%= link_to('登入', new_session_path(:user)) %>
-						<% end %>
-					<!-- </a> -->
-				</div>
 
 	</div>
 

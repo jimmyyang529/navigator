@@ -81,21 +81,25 @@ a:link{
 	padding: 0 21px;
 	height:100%;
   text-decoration: none;
-	font-size: 13px;
-	color:#ADAEAE;
+	font-size: 16px;
+	color:#FFFFFF;
+	text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 a:visited{
-	color:#ADAEAE;
+	color:#FFFFFF;
 	font-weight: 100px;
+	text-shadow: 0.1em 0.1em 0.2em black;
 }
 
+
+
 nav li a:hover{
-	color:#FFFFFF;
+	color:#E73C3C;
 	border-bottom: 3px solid;
 	border-radius: 2px;
 	border-bottom: 2px solid;
-	border-bottom-color: #FFFFFF;
+	border-bottom-color: #AC0000;
 	text-decoration: none;
 }
 
@@ -700,7 +704,7 @@ nav .service-nav li{
 
 
 .article-writer img{
-		height:250px;
+		height:200px;
 }
 
 .article-comment-body {
