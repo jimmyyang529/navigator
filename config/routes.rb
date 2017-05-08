@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       get :service
       get :aboutus
       get :work_case
+      get :consultant
     end
   end
 

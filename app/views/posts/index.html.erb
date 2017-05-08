@@ -2,13 +2,14 @@
 	<div class="container clearfix">
 		<div id="logo">
 					<%= link_to posts_path do %>
-						 <%= image_tag("logo.png", :width => 50) %>
+						 <%= image_tag("logo_web.png", :width => 60) %>
 					<% end %>
 		</div>
 			<nav>
 				<ul class="clearfix">
-						<li><%= link_to '合作案例', work_case_posts_path(@posts) %></li>
 						<li><%= link_to '服務內容', service_posts_path %></li>
+						<li><%= link_to '合作案例', work_case_posts_path(@posts) %></li>
+						<li><%= link_to '顧問', consultant_posts_path %></li>
 						<li><%= link_to '東南亞商情', articles_path(@articles) %></li>
 						<li><%= link_to '關於我們', aboutus_posts_path %></li>
 				</ul>
@@ -24,7 +25,6 @@
 						<% end %>
 					<!-- </a> -->
 				</div>
-				<div id="foundation-popup"></div>
 
 	</div>
 
@@ -47,5 +47,5 @@
 </section>
 
   <div class="button animated infinite fadeInDown">
-    <%= link_to '瞭解更多', aboutus_posts_path %>
+    <%= link_to '瞭解更多', service_posts_path %>
   </div>
