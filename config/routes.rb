@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: "registrations"}
     get 'posts/signup', to: 'posts#signup'
 
+
+
   resources :posts do
     collection do
       get :service
