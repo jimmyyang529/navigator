@@ -3,14 +3,6 @@ class PostsController < ApplicationController
   def index
   end
 
-<<<<<<< HEAD
-=======
-  def show
-  end
-
-
-
->>>>>>> 73cd00379e8305017ff56709022ef096d1693914
   def work_case
     if params[:countries].present? # params[:categories] != '' present == not_blank
       @country = Country.find(params[:countries])
