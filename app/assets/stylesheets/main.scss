@@ -12,20 +12,27 @@ body{
 }
 
 header{
- // background-color: rgba(255,255,255,.1);
- display: block;
- position: fixed;
+	width:1400px;
+ // background-color: rgba(255,255,255,.3);
+ position: absolute;
+ background-size: cover;
 }
 .container{
-	display: block;
 	max-width: 100%;
+	position: absolute;
 
+
+}
+
+nav{
+
+	position: absolute;
 }
 
 #logo{
 	float:left;
 	padding-top:30px;
-	margin-left: 100px;
+	margin-left: 30px;
 }
 
 nav li{
@@ -40,7 +47,7 @@ nav{
     max-width:100%;
     text-transform: uppercase;
 		padding-top:50px;
-		margin-left: 150px;
+		margin-left: 100px;
 }
 
 ul{
@@ -49,11 +56,11 @@ ul{
 
 .login {
 	float:right;
-	border:1px solid;
-	border-color: #FFFFFF;
+	margin-right: -100px;
 	margin-top: 35px;
 	padding: 5px 0;
 	width:180px;
+
 }
 
 .login a{
@@ -75,38 +82,40 @@ a:link{
 	height:100%;
   text-decoration: none;
 	font-size: 13px;
-	color:rgba(255,252,255,.3);
+	color:#ADAEAE;
 }
 
 a:visited{
-	color:rgba(255,252,255,.3);
+	color:#ADAEAE;
 	font-weight: 100px;
 }
 
 nav li a:hover{
-	color:rgba(255,252,255,1);
+	color:#FFFFFF;
 	border-bottom: 3px solid;
 	border-radius: 2px;
-	border-bottom: 1px solid;
-	border-bottom-color: #ffffff;
+	border-bottom: 2px solid;
+	border-bottom-color: #FFFFFF;
 	text-decoration: none;
 }
+
+
 
 .intro-text p{
   float:left;
 	padding: 0 150px;
 	color: #FFFFFF;
-	font-size: 16px;
+	font-size: 20px;
 	text-shadow: 2px 2px black;
 
 }
 .intro-text h1{
   float:left;
   padding-left: 150px;
-  margin-top: 180px;
+  margin-top: 300px;
   text-shadow: 2px 2px black;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 60px;
   color: #FFFFFF;
 }
 
@@ -120,12 +129,12 @@ nav li a:hover{
 }
 
 .button{
-	top: 400px;
-	left:500px;
+	top: 500px;
+	left:250px;
 	float:left;
 	position: absolute;
 	background-color: rgba(255,255,255,0);
-	text-shadow: 0.1em 0.1em 0.3em black;
+
 }
 
 .button:hover{
@@ -139,10 +148,11 @@ nav li a:hover{
 	text-transform: uppercase;
 	font-size: .9rem;
 	letter-spacing: 1px;
-	background-color: #CF1717;
+	background-color: #D72220;
 	color:  #FFFFFF;
 	padding: 16px 28px;
 	text-decoration: none;
+	box-shadow: 0.1em 0.1em 0.3em black;
 }
 
 .service-content{
@@ -268,14 +278,60 @@ nav li a:hover{
 
 }
 
+nav .service-nav li{
+	color: #283329;
+}
+
 
 
 .service-p{
+	background-size: cover;
+	box-shadow: 0.1em 0.1em 0.3em black;
+	height:95vmin;
+	width:570px;
+	background-color: rgba(172,0,0,1);
 	position: absolute;
 	color:#FFFFFF;
-	font-size: 35px;
-	top:450px;
-	left:100px;
+	font-size: 40px;
+	top:50px;
+	right:70px;
+}
+
+
+
+.service-title-1 {
+	position: absolute;
+	text-transform: capitalize;
+	font-size: 120px;
+	margin-left: -20px;
+
+}
+
+.handshake{
+	position: absolute;
+	top:600px;
+	right:100px;
+}
+
+.service-ul{
+	position: absolute;
+	margin-top: 250px;
+}
+
+.service-ul h4{
+	font-size: 25px;
+}
+
+.service-ul li{
+	padding-bottom: 10px;
+}
+
+.service-p p{
+	position: absolute;
+	margin-top:80px;
+	margin-left:80px;
+
+
 }
 
 .service-orange p{
@@ -286,6 +342,12 @@ nav li a:hover{
 	left:100px;
 }
 
+.service-p li{
+	list-style: none;
+	font-size: 16px;
+	top:30px;
+}
+
 .service-content{
 		position:absolute;
 		color:#EBE0C2;
@@ -294,6 +356,21 @@ nav li a:hover{
 		left:100px;
 }
 
+
+.service-more a{
+	display:inline-block;
+	border-radius: 20px;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	background-color: #FFFFFF;
+	color:  #AC0000;
+	padding: 16px 28px;
+	text-decoration: none;
+	box-shadow: 0.1em 0.1em 0.3em black;
+	margin-top:650px;
+	margin-left:300px;
+
+}
 
 
 .service-triangle{
@@ -325,23 +402,96 @@ nav li a:hover{
 
 .consult{
 	position: absolute;
-	left:350px;
-	top:950px;
+	top:250px;
 	font-weight: 500px;
 	font-size: 40px;
 	float: left;
-	color:#000000;
-	height:500px;
+	height:820px;
+
+	margin:0 20px;
+	z-index:-10;
 }
 
 .consult p{
-	text-shadow: 0.1em 0.1em 0.3em black;
+	text-shadow: 0.1em 0.1em 0.2em black;
 	margin-left:240px;
+	color: #FFFFFF;
+
 }
+
+.consult-col-4 h4{
+	font-size: 30px;
+	color:#FFFFFF;
+	text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.consult-col-4 h5{
+	font-size: 16px;
+	color:#FFFFFF;
+
+}
+
+.consult-p{
+	position: absolute;
+	font-size: 48px;
+	font-weight: 300px;
+	color: #FFFFFF;
+	top:109px;
+	right:155px;
+
+}
+
+.consult-title-1 {
+	position: absolute;
+	font-size: 150px;
+	font-weight: 500px;
+	color: #FFFFFF;
+	top:80px;
+	right:50px;
+
+}
+
+.consult-more a{
+	display:inline-block;
+	border-radius: 20px;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	background-color: #FFFFFF;
+	color:  #AC0000;
+	padding: 16px 28px;
+	text-decoration: none;
+	box-shadow: 0.1em 0.1em 0.3em black;
+	margin-top:130px;
+	margin-left:300px;
+
+}
+
+
+
 
 .consult-col-4 {
 	float:left;
 	margin:20px;
+	width:720px;
+	height:210px;
+	color: #FFFFFF;
+	background-color: rgba(10,0,0,.3);
+	box-shadow: 0.1em 0.1em 0.5em black;
+}
+
+.consult-col-4 img{
+	float:left;
+	height:20vmin;
+	margin-top:15px;
+	margin-left:10px;
+
+
+}
+
+
+.consult-col-4 li{
+	list-style: none;
+	font-size: 16px;
 }
 
 .aboutus-content h2{
@@ -375,37 +525,50 @@ nav li a:hover{
 
 
 
-.workcase-bg{
-	float:left;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -999;
-	position: fixed;
-}
 
-.workcase-bg img{
-	background-size: cover;
-	height: 100vmin;
-}
+
+
 
 .workcase{
 	float: left;
 	position: absolute;
 	top:150px;
-	left:315px;
-	width:auto;
-	box-shadow: 0.1em 0.1em 0.3em black;;
+	left:40px;
+	width:800px;
+	height:650px;
+	background-color: rgba(255,255,255,.8);
+	padding:5px 10px;
+	overflow-y: scroll;
+	min-height: 450px;
 }
 
-.workcase-tea{
-	padding-bottom: 100px;
+.workcase h4{
+	font-size: 36px;
+}
+.service-p{
+	background-size: cover;
+	box-shadow: 0.1em 0.1em 0.3em black;
+	height:95vmin;
+	width:570px;
+	background-color: rgba(172,0,0,1);
+	position: absolute;
+	color:#FFFFFF;
+	font-size: 40px;
+	top:50px;
+	right:70px;
 }
 
-.fish-1, .tea-1{
-	float:left;
+
+
+.tea-1 img{
+	position: absolute;
+	height:650px;
+	top:150px;
+	right:-200px;
 }
+
+
+
 
 .article-title li a{
 	color:black;
@@ -457,92 +620,53 @@ nav li a:hover{
 	background-color: rgba(255,255,255,.5);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes flip {
-  from {
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    animation-timing-function: ease-out;
-  }
-
-  40% {
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    animation-timing-function: ease-out;
-  }
-
-  50% {
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    animation-timing-function: ease-in;
-  }
-
-  80% {
-    transform: perspective(400px) scale3d(.95, .95, .95);
-    animation-timing-function: ease-in;
-  }
-
-  to {
-    transform: perspective(400px);
-    animation-timing-function: ease-in;
-  }
+.form-actions{
+	position: absolute;
 }
 
-.animated.flip {
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-  animation-name: flip;
+
+.sign-up{
+	margin-left:100px;
+	background-color:#E73C3C;
+	width:100px;
+	height:30px;
+
 }
 
-@keyframes flipInX {
-  from {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
+.sign-up a{
+	color:#FFFFFF;
 
-  40% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    transform: perspective(400px);
-  }
 }
 
-.flipInX {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  animation-name: flipInX;
+
+.form-inputs-sign-up{
+	margin-left:300px;
+	width:500px;
 }
+
+.form-actions-sign-up{
+	margin-left:300px;
+}
+.form-inputs-h2 h2{
+	margin-top: 200px;
+	margin-left:300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -638,6 +762,27 @@ nav li a:hover{
 }
 
 
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+
+
+
+
+
 
 @keyframes fadeInLeft {
   from {
@@ -653,4 +798,70 @@ nav li a:hover{
 
 .fadeInLeft {
   animation-name: fadeInLeft;
+}
+
+
+@keyframes flip {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    transform: perspective(400px) scale3d(.95, .95, .95);
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    transform: perspective(400px);
+    animation-timing-function: ease-in;
+  }
+}
+
+.animated.flip {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  animation-name: flip;
+}
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: flipInX;
 }
