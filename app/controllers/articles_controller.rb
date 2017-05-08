@@ -9,12 +9,21 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     @articles = Article.order('created_at DESC').limit(4).offset(1)
+
+    @response = Response.new
+    @responses = @article.responses.order('created_at desc')
+  end
+
+  def destory
   end
 
   private
 
-  def post_params
-    params.require(:article).permit(:title, :content, :photo, :writer_id)
+  def article_params
+    params.require(:article).permit(:title, 
+                                  :content, 
+                                  :photo, 
+                                  :writer_id)
   end
 
 end

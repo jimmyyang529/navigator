@@ -16,8 +16,14 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :posts do
+    resources :countries
+  end
 
-  resources :articles
+  resources :articles do
+    resources :responses
+  end
+
   root 'posts#index'
 
 end

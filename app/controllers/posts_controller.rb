@@ -6,12 +6,15 @@ class PostsController < ApplicationController
   def show
   end
 
-  def consultant
-    
-  end
+
 
   def work_case
-    @posts = Post.all.order('created_at DESC')
+    if params[:countries].present? # params[:categories] != '' present == not_blank
+      @country = Country.find(params[:countries])
+      @posts = @country.posts.order('created_at DESC').page.per(10)
+    else
+      @posts = Post.all.order('created_at DESC').page.per(10)
+    end
   end
 
   def signup
