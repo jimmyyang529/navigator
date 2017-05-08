@@ -567,7 +567,9 @@ nav .service-nav li{
 	right:-200px;
 }
 
-
+.article-title li {
+	color:black;
+}
 
 
 .article-title li a{
@@ -575,30 +577,26 @@ nav .service-nav li{
 }
 
 
-.info img{
-	width:400px;
-	float: left;
-	padding-right: 5px;
-}
 
-.article-title {
+.article-index {
 	padding:10px;
 	float:left;
 }
 
-.article-title li {
+.article-index li {
 	list-style-type:none;
 	font-size: 18px;
 
 }
 
-.article-title li a:hover{
-	background-color: rgba(255,255,255,.8);
+.article-index li a:hover{
+	background-color: rgba(255,255,255,.9);
+	color:#000000;
 }
 
 
-.article-title img{
-	height:190px;
+.article-index img{
+	height:150px;
 }
 
 
@@ -652,7 +650,80 @@ nav .service-nav li{
 	margin-left:300px;
 }
 
+.article-title{
+	position: absolute;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	z-index: -999;
+	margin-top:100px;
+	margin-left: 50px;
+	width:1000px;
+	background-color: #FFFFFF;
+}
 
+.article-title li img {
+	height:300px;
+}
+
+.article-img-03 img{
+	height:6200px;
+}
+
+.app-store-logo{
+	position: absolute;
+	width:200px;
+	top:450px;
+	left:450px;
+}
+
+.article-writer{
+	width:300px;
+	height:900px;
+	background-color: #AC0000;
+	margin-left: 1050px;
+	position: fixed;
+	color:#FFFFFF;
+}
+
+.article-writer h3{
+		font-size: 40px;
+		margin-top: 120px;
+}
+.article-writer h4{
+		font-size: 30px;
+
+}
+
+.article-title li{
+	list-style: none;
+}
+
+
+.article-writer img{
+		height:250px;
+}
+
+.article-comment-body {
+	height:200px;
+}
+#response_body{
+	height:150px;
+}
+
+.show-more a{
+	display:inline-block;
+	border-radius: 20px;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	background-color: #FFFFFF;
+	color:  #AC0000;
+	padding: 16px 28px;
+	text-decoration: none;
+	box-shadow: 0.1em 0.1em 0.3em black;
+	margin-top:150px;
+	margin-left:1100px;
+
+}
 
 
 

@@ -35,10 +35,13 @@
 <ul class="table">
   <h1>東南亞商情</h1>
   <% @articles.each do |article| %>
-      <div class="article-title animated infinite fadeInDown">
+      <div class="article-index animated infinite fadeInDown">
         <li><%= link_to article_path(article) do %>
               <%= image_tag(article.photo) %>
-              <%= article.title %></li>
+
+                <%= article.title %></li>
+            
+
             <% end %>
       </div>
       <%end%>
