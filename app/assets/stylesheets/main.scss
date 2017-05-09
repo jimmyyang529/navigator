@@ -525,14 +525,6 @@ nav .service-nav li{
 	margin-top: -218px;
 }
 
-
-
-
-
-
-
-
-
 .workcase{
 	float: left;
 	position: absolute;
@@ -658,11 +650,10 @@ nav .service-nav li{
 	position: absolute;
 	padding-bottom: 20px;
 	padding-left: 10px;
-	z-index: -999;
 	margin-top:100px;
 	margin-left: 50px;
 	width:1000px;
-	background-color: #FFFFFF;
+	background-color: rgba(255,255,255,.7);
 }
 
 .article-title li img {
@@ -676,17 +667,18 @@ nav .service-nav li{
 .app-store-logo{
 	position: absolute;
 	width:200px;
-	top:450px;
-	left:450px;
+	top:600px;
+	left:550px;
 }
 
 .article-writer{
 	width:300px;
-	height:900px;
+	height:1000px;
 	background-color: #AC0000;
 	margin-left: 1050px;
 	position: fixed;
 	color:#FFFFFF;
+
 }
 
 .article-writer h3{
@@ -714,20 +706,42 @@ nav .service-nav li{
 	height:150px;
 }
 
-.show-more a{
-	display:inline-block;
+.article-writer a{
+	margin-left: 20px;
+	padding: 6px 20px;
+	top:100px;
+	width:150px;
+	height:40px;
 	border-radius: 20px;
-	font-size: 1.3rem;
+	font-size: 1.8rem;
 	letter-spacing: 1px;
 	background-color: #FFFFFF;
 	color:  #AC0000;
-	padding: 16px 28px;
 	text-decoration: none;
 	box-shadow: 0.1em 0.1em 0.3em black;
-	margin-top:150px;
-	margin-left:1100px;
+	text-shadow: 0.1em 0.1em 0.1em black;
 
 }
+
+
+.articleshow-bg{
+	float:left;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -999;
+	position: absolute;
+	background-size: cover;
+
+}
+
+.articleshow-bg img {
+		min-height: 100vh;
+		width: 100%;
+		position: fixed;
+}
+
 
 
 
